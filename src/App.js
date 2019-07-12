@@ -1,5 +1,7 @@
 import React from 'react';
 import './app.css';
+import STORE from './store.js';
+import List from './list.js';
 
 function App() {
   return (
