@@ -1,17 +1,20 @@
 import React from 'react';
+import Card from './Card';
 import './list.css';
 
-function List() {
+function List(props) {
+
     return (
         <main className='List'>
             <header className='List-header'>
-            List
+                List
             </header>
             <div className='List-cards'>
-                {STORE.lists.map(list => (
-                    <List 
-                    header={list.header}
-                    cards={list.cardIds.map(id => store.allCards[id])}
+                {props.cards.map(card => (
+                    <Card
+                        key={card.id}
+                        header={card.title}
+                        content={card.content}
                   />
                 ))}
             </div>
