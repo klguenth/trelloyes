@@ -4,7 +4,7 @@ import './card.css';
 function Card(props) {
     return (
       <div className='Card'>
-        <button type='button'>
+        <button type='button' id='btn'>
           delete
         </button>
         <h3>{props.title}</h3>
