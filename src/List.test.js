@@ -4,6 +4,10 @@ import List from './List';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<List />, div);
+  ReactDOM.render(<List cards={[{
+      id: 1,
+      title: 'first title',
+      content: 'first content'
+  }]} />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
